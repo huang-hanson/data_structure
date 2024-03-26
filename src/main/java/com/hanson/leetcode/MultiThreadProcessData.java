@@ -9,7 +9,7 @@ import java.util.concurrent.*;
  * @author hanson
  * @date 2024/3/12 19:39
  */
-public class multiThreadProcessData {
+public class MultiThreadProcessData {
     /*
      * 有一个List<String>中有N条数据（N比较大，比如100万条），每一天的内容都是0-9的一个随机数，写一个方法并发m个线程，
      * 每个线程批量处理n条数据，将每个数字转换成对应的中文，处理完毕再继续获取n条数据进行处理，直到原数据集所有数据处理完毕，并最终返回转换完的新数据集
