@@ -1,4 +1,4 @@
-package com.hanson.lock.fairlock;
+package com.hanson.java_concurren.lock.fairlock;
 
 import java.util.concurrent.locks.ReentrantLock;
 
