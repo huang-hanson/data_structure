@@ -12,27 +12,24 @@ package com.hanson.sort;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] arr = {5,2,3,1,4};
+        int[] arr = {5, 2, 3, 1, 4};
         // 对数组进行冒泡排序
         bubbleSort(arr);
         // 打印排序后的数组
         System.out.println("排序后的数组：");
-        for (int num: arr){
+        for (int num : arr) {
             System.out.println(num + " ");
         }
     }
 
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
-        // 外层循环遍历控制遍历次数
         for (int i = 0; i < n - 1; i++) {
-            // 内层循环控制每次遍历的比较和交换
             for (int j = 0; j < n - i - 1; j++) {
-                // 如果当前元素大于下一个元素，则交换他们的位置
-                if (arr[j] > arr[j+1]){
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j+1];
+                    arr[j+1] = arr[j];
+                    arr[j] = temp;
                 }
             }
         }
